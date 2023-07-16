@@ -1,8 +1,8 @@
+象形文字描述序列
 IDS data
 ========
 
-This is a collection of various IDS (Ideographic Description Sequence)
-data.
+This is a collection of various IDS (Ideographic Description Sequence) data.
 
 ## Description
 
