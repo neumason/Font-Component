@@ -5,27 +5,18 @@
 
 中日韩越统一表意文字（英语：CJKV Unified Ideographs），旧称中日韩统一表意文字（英语：CJK Unified Ideographs），也称统一汉字（英语：Unihan），目的是要把分别来自中文、日文、韩文、越文、壮文中，对于相同起源、本义相同、形状一样或稍异的表意文字主要为汉字，但也有仿汉字如：方块壮字、日文汉字（かんじ / kanji）、韩文汉字（한자 / hanja）、越南的喃字（Chữ Nôm）与越文汉字[汉字/Hán Tự，在越南也称作儒字（𡨸儒/Chữ Nho）]，应赋予其在ISO 10646及统一码标准中有相同编码。此计划原本只包含中文、日文及韩文中所使用的汉字，是以旧称中日韩统一表意文字（CJK）。后来，此计划加入了越文的喃字，所以合称中日韩越统一表意文字（CJKV）。
 
-
 ## 数据集描述
 
-IDS (Ideographic Description Sequence) is a way to describe the
-structure of CJK Unified ideographs.
+表意文字描述序列是一种描述IDS (Ideographic Description Sequence) 是一种描述中日韩统一表意文字的方法。
 
-The IDS consists of IDCs (Ideographic Description Characters), namely
-"⿰" (U+2FF0) to "⿻" (U+2FFB), and DCs (Description Characters), that
-are usually ideographs.
+The IDS consists of IDCs (Ideographic Description Characters), namely"⿰ " (U+2FF0) to "⿻" (U+2FFB), and DCs (Description Characters), that are usually ideographs.
 
-IDS is quite important information for ideographs, as it may be
-possible to identify ideographs from them.
+IDS is quite important information for ideographs, as it may be possible to identify ideographs from them.
 
-However, there may be ambiguity for encoding IDS. Therefore, tools to
-normalize IDS and identify the ideographs would be important.
+However, there may be ambiguity for encoding IDS. Therefore, tools to normalize IDS and identify the ideographs would be important.
 [IDS tool](http://github.com/kawabata/ids) is one of such example.
 
-Also, IDS sequences use full range of CJK ideographs, so the fonts
-that covers all encoded ideographs (such
-as [HanaMin](http://fonts.jp/hanazono/)
-or [Hanamin AFDKO](https://github.com/cjkvi/HanaMinAFDKO/releases) )
+Also, IDS sequences use full range of CJK ideographs, so the fonts that covers all encoded ideographs (such as [HanaMin](http://fonts.jp/hanazono/) or [Hanamin AFDKO](https://github.com/cjkvi/HanaMinAFDKO/releases) )
 should be used.
 
 ## Encoding Policies
