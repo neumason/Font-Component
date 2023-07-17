@@ -1,5 +1,4 @@
-象形文字描述序列
-IDS data
+汉字的部件描述数据库-IDS (Ideographic Description Sequence) data
 ========
 
 This is a collection of various IDS (Ideographic Description Sequence) data.
