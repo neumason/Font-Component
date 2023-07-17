@@ -7,9 +7,10 @@
 
 ## 数据集描述
 
-表意文字描述序列是一种描述IDS (Ideographic Description Sequence) 是一种描述中日韩统一表意文字的方法。
+表意文字描述序列IDS (Ideographic Description Sequence) 是一种描述中日韩统一表意文字的方法。
 
-The IDS consists of IDCs (Ideographic Description Characters), namely"⿰ " (U+2FF0) to "⿻" (U+2FFB), and DCs (Description Characters), that are usually ideographs.
+IDS由表意描述字符IDCs(Ideographic Description Characters)，描述字符从“⿰”（U+2FF0）到“⿻”（U+2FFB）和DC（描述字符）组成，DC通常是表意文字。
+IDS包含The IDS consists of IDCs (Ideographic Description Characters), namely"⿰ " (U+2FF0) to "⿻" (U+2FFB), and DCs (Description Characters), that are usually ideographs.
 
 IDS is quite important information for ideographs, as it may be possible to identify ideographs from them.
 
@@ -21,35 +22,19 @@ should be used.
 
 ## Encoding Policies
 
-* Compatibility ideographs, whose IDSes are not equal to their
-  corresponding unified ideographs, may be used as DCs. When there are
-  multiple compatibility ideographs with the same IDS, then the one
-  with smaller character code will be used. (e.g.
-  ⻀,並,荒,冗,叟,切,巢,廾,戛,桒,甾,𤾡,舁,蕤,貫,黾)
+* Compatibility ideographs, whose IDSes are not equal to their corresponding unified ideographs, may be used as DCs. When there are multiple compatibility ideographs with the same IDS, then the one   with smaller character code will be used. (e.g. ⻀,並,荒,冗,叟,切,巢,廾,戛,桒,甾,𤾡,舁,蕤,貫,黾)
 
-* Following non-ideographs may be used as DCs (for now).
-  "αℓ△⺀⺄⺆⺈⺊⺌⺍⺶⺸⺻⺼〇〢キサ㇀㇉㇢㇞"
+* Following non-ideographs may be used as DCs (for now).   "αℓ△⺀⺄⺆⺈⺊⺌⺍⺶⺸⺻⺼〇〢キサ㇀㇉㇢㇞"
 
-* Encircled numerics ① ～ ⑳ represents unencoded DCs. Number denotes
-  its stroke count. This would be useful when calculating total
-  strokes of ideographs. Such convention does not conform with the
-  Annex I of ISO/IEC 10646, so please replace them with wildcard
-  character `？' (U+FF1F) if you need a strict conformance with the
-  UCS standard.
+* Encircled numerics ① ～ ⑳ represents unencoded DCs. Number denotes its stroke count. This would be useful when calculating total
+  strokes of ideographs. Such convention does not conform with the Annex I of ISO/IEC 10646, so please replace them with wildcard
+  character `？' (U+FF1F) if you need a strict conformance with the UCS standard.
 
-* IDS data file with name postfix "*-cdp.txt" adopts PUA characters
-  from [CDP](https://www.sinica.edu.tw/~cdp) (CDP stands for "Chinese
-  Document Processing lab" at Academia Sinica) as DCs. They are
+* IDS data file with name postfix "*-cdp.txt" adopts PUA characters from [CDP](https://www.sinica.edu.tw/~cdp) (CDP stands for "Chinese Document Processing lab" at Academia Sinica) as DCs. They are
   deonted as entity reference like "&CDP-xxxx;".
 
-  At the end of "ids-cdp.txt", mappings between PUA DCs and CDP
-  references are enumerated. For details of usable PUA characters,
-  refer
-  [an article on CDP](http://glyphwiki.org/wiki/Group:CDP%E5%A4%96%E5%AD%97) at
-  GlyphWiki. CDP's hexadecmail numbers and Unicode BMP PUA character
-  codepoints relationship is based on EUDC codepoints defined by by
-  Microsoft
-  [Big5 to PUA conversion table](http://kanji-database.sourceforge.net/charcode/big5.html).
+  At the end of "ids-cdp.txt", mappings between PUA DCs and CDP references are enumerated. For details of usable PUA characters,  refer [an article on CDP](http://glyphwiki.org/wiki/Group:CDP%E5%A4%96%E5%AD%97) at
+  GlyphWiki. CDP's hexadecmail numbers and Unicode BMP PUA character codepoints relationship is based on EUDC codepoints defined by by Microsoft [Big5 to PUA conversion table](http://kanji-database.sourceforge.net/charcode/big5.html).
   HanaMinAFDKO Font supports these glyphs in PUA.
 
 * IDS of compatibility ideographs may sometimes have compatibility
