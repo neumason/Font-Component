@@ -9,15 +9,14 @@
 
 表意文字描述序列IDS (Ideographic Description Sequence) 是一种描述中日韩统一表意文字的方法。
 
-IDS由表意描述字符IDCs(Ideographic Description Characters)，描述字符从“⿰”（U+2FF0）到“⿻”（U+2FFB）和DC（描述字符）组成，DC通常是表意文字。
-IDS包含The IDS consists of IDCs (Ideographic Description Characters), namely"⿰ " (U+2FF0) to "⿻" (U+2FFB), and DCs (Description Characters), that are usually ideographs.
+IDS序列由表意描述字符IDCs(Ideographic Description Characters)组成，描述字符从“⿰”（U+2FF0）到“⿻”（U+2FFB）和DC（描述字符）组成，DC通常是表意文字。
 
-IDS is quite important information for ideographs, as it may be possible to identify ideographs from them.
-
-However, there may be ambiguity for encoding IDS. Therefore, tools to normalize IDS and identify the ideographs would be important.
-[IDS tool](http://github.com/kawabata/ids) is one of such example.
-
-Also, IDS sequences use full range of CJK ideographs, so the fonts that covers all encoded ideographs (such as [HanaMin](http://fonts.jp/hanazono/) or [Hanamin AFDKO](https://github.com/cjkvi/HanaMinAFDKO/releases) )
+## 几个重要的网址
+1. [IDS tool](http://github.com/kawabata/ids)
+2. [HanaMin](http://fonts.jp/hanazono/)
+3. [Hanamin AFDKO](https://github.com/cjkvi/HanaMinAFDKO/releases)
+4. [结构查询](https://www.chise.org/)
+5. 
 should be used.
 
 ## Encoding Policies
